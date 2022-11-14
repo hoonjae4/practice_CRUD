@@ -38,11 +38,18 @@
                     </c:otherwise>
                 </c:choose>
             </td>
-            <td style="text-align:center">
-                <img src="/image/main.jpg" style="width:600px; height: 400px">
+            <td style="text-align:center;">
+                <table style="table-layout: fixed;">
+                    <tr>
+                        <td style="width: 80px;">번호</td>
+                        <td style="width: 80px;">분류</td>
+                        <td style="width: 400px;">제목</td>
+                        <td style="width: 120px;">글쓴이</td>
+                        <td style="width: 120px;">등록일</td>
+                    </tr>
+                </table>
             </td>
         </tr>
-
     </table>
 </div>
 <%@ include file="layout/footer.jsp"%>

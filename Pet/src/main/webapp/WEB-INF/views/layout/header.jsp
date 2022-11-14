@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+<body class="container-fluid">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:200px">
         <div class="navbar-collapse">
@@ -20,7 +20,7 @@
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
                 <a class="nav-item nav-link" href="#" style="font-size: 40px">신청리스트</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
-                <a class="nav-item nav-link" href="#" style="font-size: 40px">문의사항</a>
+                <a class="nav-item nav-link" href="/board" style="font-size: 40px">문의사항</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
                 <a class="nav-item nav-link" href="#" style="font-size: 40px">매뉴얼</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
