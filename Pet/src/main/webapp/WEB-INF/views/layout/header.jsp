@@ -16,9 +16,9 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" style="font-size: 40px;" href="#">홈</a>
+                <a class="nav-item nav-link" style="font-size: 40px;" href="/">홈</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
-                <a class="nav-item nav-link" href="#" style="font-size: 40px">신청리스트</a>
+                <a class="nav-item nav-link" href="/userList" style="font-size: 40px">신청리스트</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
                 <a class="nav-item nav-link" href="/board" style="font-size: 40px">문의사항</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>

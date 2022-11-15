@@ -41,19 +41,15 @@
             <td style="text-align:center;">
                 <table style="table-layout: fixed;" class="table">
                     <tr>
-                        <td style="width: 80px;">번호</td>
-                        <td style="width: 80px;">분류</td>
-                        <td style="width: 400px;">제목</td>
-                        <td style="width: 120px;">글쓴이</td>
-                        <td style="width: 120px;">등록일</td>
+                        <td style="width: 80px;"></td>
+                        <td style="width: 80px;">신청자 성명</td>
+                        <td style="width: 400px;">아이디</td>
                     </tr>
-                    <c:forEach var="board" items="${board}">
+                    <c:forEach var="user" items="${user}">
                         <tr>
-                            <td style="width: 80px;">${board.id}</td>
-                            <td style="width: 80px;">${board.section}</td>
-                            <td style="width: 400px;"><a href="#" style="text-decoration: none;">${board.title}</a></td>
-                            <td style="width: 120px;">${board.user.name}</td>
-                            <td style="width: 120px;">${board.createDate}</td>
+                            <td style="width: 80px;">${user.id}</td>
+                            <td style="width: 80px;">${user.name}</td>
+                            <td style="width: 400px;">${user.username}</td>
                         </tr>
                     </c:forEach>
                 </table>
