@@ -39,29 +39,31 @@
                 </c:choose>
             </td>
             <td style="text-align:center;">
-                <table style="table-layout: fixed;" class="table">
+                <table style="table-layout: fixed;" class="table-bordered">
                     <tr>
-                        <td style="width: 10px;"></td>
-                        <td style="width: 80px;">신청자 성명</td>
-                        <td style="width: 80px;">아이디</td>
-                        <td style="width: 80px;">이용약관<br>동의여부</td>
-                        <td style="width: 80px;">필수교육<br>시청여부</td>
-                        <td style="width: 80px;">가입여부</td>
-                        <td style="width: 80px;">인증여부</td>
-                        <td style="width: 80px;"></td>
+                        <td style="width: 120px;">이름</td>
+                        <td style="width: 1000px;">${user.name}</td>
+
                     </tr>
-                    <c:forEach var="user" items="${user}">
-                        <tr>
-                            <td>${user.id}</td>
-                            <td>${user.name}</td>
-                            <td>${user.username}</td>
-                            <td>O</td>
-                            <td>O</td>
-                            <td>O</td>
-                            <td>${user.isAgreed}</td>
-                            <td><button type="submit" onclick="location.href='/userDetail/${user.id}'">상세보기</button></td>
-                        </tr>
-                    </c:forEach>
+                    <tr>
+                        <td>아이디</td>
+                        <td>${user.username}</td>
+                    </tr>
+                    <tr>
+                        <td>주소</td>
+                        <td>${user.address}</td>
+                    </tr>
+                    <tr>
+                        <td>교육여부</td>
+                        <td>O</td>
+                    </tr>
+                    <tr style="text-align: start;"><td colspan="2">
+                        <form method="post" action="/userDetail/authenticate">
+                            <input type="hidden" name="id" value="${user.id}">
+                            <button type="submit"style="font-size:12px;">수락하기</button>
+                        </form>
+                        <button type="button" onclick="location.href='/userList'" style="font-size:12px;">돌아가기</button>
+                    </td></tr>
                 </table>
             </td>
         </tr>

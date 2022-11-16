@@ -41,25 +41,19 @@
             <td style="text-align:center;">
                 <table style="table-layout: fixed;" class="table">
                     <tr>
-                        <td style="width: 10px;"></td>
-                        <td style="width: 80px;">신청자 성명</td>
-                        <td style="width: 80px;">아이디</td>
-                        <td style="width: 80px;">이용약관<br>동의여부</td>
-                        <td style="width: 80px;">필수교육<br>시청여부</td>
-                        <td style="width: 80px;">가입여부</td>
-                        <td style="width: 80px;">인증여부</td>
-                        <td style="width: 80px;"></td>
+                        <td style="width: 80px;">번호</td>
+                        <td style="width: 80px;">분류</td>
+                        <td style="width: 80px;">글쓴이</td>
+                        <td style="width: 300px;">제목</td>
+                        <td style="width: 500px;">내용</td>
                     </tr>
-                    <c:forEach var="user" items="${user}">
+                    <c:forEach var="report" items="${report}">
                         <tr>
-                            <td>${user.id}</td>
-                            <td>${user.name}</td>
-                            <td>${user.username}</td>
-                            <td>O</td>
-                            <td>O</td>
-                            <td>O</td>
-                            <td>${user.isAgreed}</td>
-                            <td><button type="submit" onclick="location.href='/userDetail/${user.id}'">상세보기</button></td>
+                            <td style="width: 80px;">${report.id}</td>
+                            <td style="width: 80px;">${report.section}</td>
+                            <td style="width: 120px;">${report.user.name}</td>
+                            <td style="width: 400px;">${report.title}</td>
+                            <td style="width: 120px;">${report.content}</td>
                         </tr>
                     </c:forEach>
                 </table>

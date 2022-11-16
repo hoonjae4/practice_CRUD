@@ -22,9 +22,9 @@
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
                 <a class="nav-item nav-link" href="/board" style="font-size: 40px">문의사항</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
-                <a class="nav-item nav-link" href="#" style="font-size: 40px">매뉴얼</a>
+                <a class="nav-item nav-link" href="/menual" style="font-size: 40px">매뉴얼</a>
                 <span class="nav-item nav-link" style="font-size: 40px; padding-left: 20px; padding-right: 20px;">/</span>
-                <a class="nav-item nav-link" href="#" style="font-size: 40px">신고</a>
+                <a class="nav-item nav-link" href="/report" style="font-size: 40px">신고</a>
             </div>
         </div>
     </nav>

@@ -14,7 +14,7 @@ import java.sql.Timestamp;
 @Entity
 @AllArgsConstructor
 @Builder
-public class Board {
+public class Report {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

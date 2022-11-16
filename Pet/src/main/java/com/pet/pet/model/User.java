@@ -15,7 +15,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id",nullable = false)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "ID 입력은 필수입니다.")
     @Column(name="username", length = 100, unique = true)
@@ -32,4 +32,7 @@ public class User {
     @NotBlank
     @Column(name="address", length= 100)
     private String address;
+
+    @Enumerated(EnumType.STRING)
+    private Take isAgreed;
 }

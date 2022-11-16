@@ -51,7 +51,7 @@
                         <tr>
                             <td style="width: 80px;">${board.id}</td>
                             <td style="width: 80px;">${board.section}</td>
-                            <td style="width: 400px;"><a href="#" style="text-decoration: none;">${board.title}</a></td>
+                            <td style="width: 400px;"><a href="/board/${board.id}" style="text-decoration: none;">${board.title}</a></td>
                             <td style="width: 120px;">${board.user.name}</td>
                             <td style="width: 120px;">${board.createDate}</td>
                         </tr>
